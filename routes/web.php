@@ -32,3 +32,11 @@ Route::get('mahasiswa/{nama}', function ($nama) {
 Route::get('/hello/hello2/hellolagi', function () {
     echo "Hello World";
 });
+
+Route::get('/mahasiswa', function () {
+    $kelas = "IS63";
+    $data = ["Khalifah","Herdio","Badri","Raihan","Putri","Hanif"];
+
+    // return view('mahasiswa.index')->with('mhs',$data)->with('kls',$kelas);
+    return view('mahasiswa.index',compact('kelas','data'));
+});
