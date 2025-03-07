@@ -17,26 +17,35 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/cth', function () {
-    return view('contoh');
-});
+// Route::get('/cth', function () {
+//     return view('contoh');
+// });
 
-Route::fallback(function () {
-    return view('notfound');
-});
+// Route::fallback(function () {
+//     return view('notfound');
+// });
 
-Route::get('mahasiswa/{nama}', function ($nama) {
-    echo "Ini Halaman Mahasiswa dengan Nama $nama";
-});
+// // Route::get('mahasiswa/{nama}', function ($nama) {
+// //     echo "Ini Halaman Mahasiswa dengan Nama $nama";
+// // });
 
-Route::get('/hello/hello2/hellolagi', function () {
-    echo "Hello World";
-});
+// Route::get('/hello/hello2/hellolagi', function () {
+//     echo "Hello World";
+// });
+
+// Route::get('/mahasiswa', function () {
+//     $kelas = "IS63";
+//     $data = ["Khalifah","Herdio","Badri","Raihan","Putri","Hanif"];
+
+//     // return view('mahasiswa.index')->with('mhs',$data)->with('kls',$kelas);
+//     return view('mahasiswa.index',compact('kelas','data'));
+// });
 
 Route::get('/mahasiswa', function () {
-    $kelas = "IS63";
-    $data = ["Khalifah","Herdio","Badri","Raihan","Putri","Hanif"];
+    $nama = "Herdio Saputra";
+    $nilai = -40;
 
-    // return view('mahasiswa.index')->with('mhs',$data)->with('kls',$kelas);
-    return view('mahasiswa.index',compact('kelas','data'));
+    $nilai2 = [85,70,50,70,35,100];
+
+    return view('mahasiswa',compact('nama','nilai','nilai2'));
 });
