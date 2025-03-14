@@ -50,6 +50,11 @@ Route::get('/', function () {
 //     return view('mahasiswa',compact('nama','nilai','nilai2'));
 // });
 
+Route::get('/master', function () {
+    $data_mhs = ["Abdul","Adha","Aidil","Alif","Asfal"];
+    return view('layout.master',compact('data_mhs'));
+});
+
 Route::get('/mahasiswa', function () {
     $data_mhs = ["Abdul","Adha","Aidil","Alif","Asfal"];
     return view('data.mahasiswa',compact('data_mhs'));
