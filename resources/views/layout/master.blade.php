@@ -18,13 +18,13 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="/mahasiswa">Mahasiswa</a>
+                    <a class="nav-link @yield('MenuMhs')" aria-current="page" href="/mahasiswa">Mahasiswa</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/dosen">Dosen</a>
+                    <a class="nav-link @yield('MenuDos')" href="/dosen">Dosen</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/galeri">Galeri</a>
+                    <a class="nav-link @yield('MenuGal')" href="/galeri">Galeri</a>
                 </li>
 
                 </ul>

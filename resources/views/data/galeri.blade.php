@@ -1,5 +1,10 @@
-@include('layout.header',['title' => 'Data Galeri'])
+@extends('layout.master')
+@section('title')
+Galeri Foto
+@endsection
+@section('MenuGal','active')
 
+@section('konten')
     <div class="container text-center mt-3 bg-white">
         <h2 class="mb-3">Galeri Foto</h2>
         <div class="row">
@@ -30,5 +35,4 @@
 
         {{-- konten --}}
     </div>
-
-    @include('layout.footer')
+    @endsection

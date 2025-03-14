@@ -3,6 +3,10 @@
     Data Mahasiswa
 @endsection
 
+@section('MenuMhs')
+    active
+@endsection
+
 @section('konten')
 <div class="container text-center mt-3 bg-white">
     <h2 class="mb-3">Data mahasiswa</h2>
