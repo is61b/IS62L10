@@ -13,7 +13,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
+Route::get('/home', function () {
     return view('welcome');
 });
 
@@ -50,7 +50,7 @@ Route::get('/', function () {
 //     return view('mahasiswa',compact('nama','nilai','nilai2'));
 // });
 
-Route::get('/master', function () {
+Route::get('/', function () {
     $data_mhs = ["Abdul","Adha","Aidil","Alif","Asfal"];
     return view('layout.master',compact('data_mhs'));
 });
