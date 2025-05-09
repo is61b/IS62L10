@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\dosenController;
 
 /*
 |--------------------------------------------------------------------------
@@ -72,3 +73,7 @@ Route::get('/home', function () {
 Auth::routes();
 
 Route::get('/', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+//Data Dosen
+Route::get('/dosen', [dosenController::class, 'index']);
+Route::get('/dosen/tambah', [dosenController::class, 'create']);
