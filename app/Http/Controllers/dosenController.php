@@ -14,6 +14,7 @@ class dosenController extends Controller
         // menampilkan data dosen
         return view('Dosen.index');
 
+
     }
 
     /**

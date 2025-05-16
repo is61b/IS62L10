@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\dosenController;
 
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -15,7 +16,7 @@ use App\Http\Controllers\dosenController;
 */
 
 Route::get('/home', function () {
-    return view('welcome');
+    return view('home');
 });
 
 // Route::get('/cth', function () {
