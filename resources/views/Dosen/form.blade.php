@@ -8,18 +8,19 @@
                 <div class="card-header">Form Tambah Data</div>
 
                 <div class="card-body">
-                    <form>
+                    <form method="post" action="/dosen" enctype="multipart/form-data">
+                        @csrf
                         <div class="mb-3">
                             <label for="exampleInputEmail1" class="form-label">NIDN</label>
-                            <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                            <input type="text" name="nidn" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
                         </div>
                         <div class="mb-3">
                             <label for="exampleInputPassword1" class="form-label">Nama Lengkap</label>
-                            <input type="text" class="form-control" id="exampleInputPassword1">
+                            <input type="text" name="nama" class="form-control" id="exampleInputPassword1">
                         </div>
                         <div class="mb-3">
                             <label for="exampleInputPassword1" class="form-label">Email</label>
-                            <input type="email" class="form-control" id="exampleInputPassword1">
+                            <input type="email" name="email" class="form-control" id="exampleInputPassword1">
                         </div>
                         <div class="mb-3">
                             <label for="exampleInputPassword1" class="form-label">Rumpun</label>
@@ -36,7 +37,7 @@
                         </div>
                         <div class="mb-3">
                             <label for="exampleInputPassword1" class="form-label">No Handphone</label>
-                            <input type="nohp" class="form-control" id="exampleInputPassword1">
+                            <input type="nohp" name="nohp" class="form-control" id="exampleInputPassword1">
                         </div>
 
                         <button type="submit" class="btn btn-primary">Tambah</button>
