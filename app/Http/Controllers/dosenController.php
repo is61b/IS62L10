@@ -23,6 +23,7 @@ class dosenController extends Controller
     public function create()
     {
         // menampilkan form tambah
+        return view('Dosen.form');
     }
 
     /**
