@@ -59,6 +59,8 @@ class dosenController extends Controller
     public function edit(string $id)
     {
         // form edit
+        $dosen = Dosen::find($id);
+        return view('Dosen.edit',compact('dosen'));
     }
 
     /**
