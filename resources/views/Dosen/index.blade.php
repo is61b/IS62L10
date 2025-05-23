@@ -6,7 +6,7 @@
         <div class="col-md-8">
             <div class="card">
                 <div class="card-header">
-                    <div class="float-end"><a href="/dosen/tambah" class="btn btn-primary btn-sm">Tambah Data</a></div>
+                    <div class="float-end"><a href="/dosen/tambah" class="btn btn-primary btn-sm"><i class="fa-solid fa-user-plus"></i> Tambah Data</a></div>
 
                 </div>
 
@@ -30,9 +30,9 @@
                                     <td>{{$data->nama}}</td>
                                     <td>{{$data->email}}</td>
                                     <td>
-                                        <a href="" class="btn btn-warning btn-sm">detail</a>
-                                        <a href="" class="btn btn-info btn-sm">edit</a>
-                                        <a href="" class="btn btn-danger btn-sm">hapus</a>
+                                        <a href="" class="btn btn-warning btn-sm"><i class="fa-solid fa-circle-info"></i></a>
+                                        <a href="" class="btn btn-info btn-sm"><i class="fa-solid fa-pen-to-square"></i></a>
+                                        <a href="" class="btn btn-danger btn-sm"><i class="fa-solid fa-trash"></i></a>
                                     </td>
                                 </tr>
                             @empty
