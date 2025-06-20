@@ -19,6 +19,10 @@ Route::get('/home', function () {
     return view('home');
 });
 
+Route::get('/cektemplate', function () {
+    return view('layouts.template');
+});
+
 // Route::get('/cth', function () {
 //     return view('contoh');
 // });
