@@ -225,7 +225,7 @@
             </ul>
           </li>
           <li class="nav-item">
-            <a href="../widgets.html" class="nav-link">
+            <a href="/mahasiswa" class="nav-link">
               <i class="nav-icon fa fa-users"></i>
               <p>
                 Mahasiswa
@@ -234,7 +234,7 @@
           </li>
 
           <li class="nav-item">
-            <a href="../widgets.html" class="nav-link">
+            <a href="/jurusan" class="nav-link">
               <i class="nav-icon fa fa-building"></i>
               <p>
                 Jurusan
@@ -243,7 +243,7 @@
           </li>
 
           <li class="nav-item">
-            <a href="../widgets.html" class="nav-link">
+            <a href="/dosen" class="nav-link">
               <i class="nav-icon fa fa-user-graduate"></i>
               <p>
                 Dosen

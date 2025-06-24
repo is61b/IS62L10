@@ -1,31 +1,18 @@
-@extends('layouts.template')
-
-@section('title')
-    Data Dosen
-@endsection
-
-@section('headline')
-    Data Dosen
-@endsection
+@extends('layouts.app')
 
 @section('content')
-<div class="card">
-    <div class="card-header">
-        <h3 class="card-title">
-            <a href="/dosen/tambah" class="btn btn-primary btn-sm"><i class="fa fa-user-plus"></i> Tambah Data</a>
-        </h3>
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card">
+                <div class="card-header">
+                    <div class="float-end"><a href="/dosen/tambah" class="btn btn-primary btn-sm"><i class="fa-solid fa-user-plus"></i> Tambah Data</a></div>
 
-        <div class="card-tools">
-        <button type="button" class="btn btn-tool" data-card-widget="collapse" title="Collapse">
-            <i class="fas fa-minus"></i>
-        </button>
-        <button type="button" class="btn btn-tool" data-card-widget="remove" title="Remove">
-            <i class="fas fa-times"></i>
-        </button>
-        </div>
-    </div>
-    <div class="card-body">
-        <table class="table">
+                </div>
+
+                <div class="card-body">
+
+                    <table class="table">
                         <thead>
                             <tr>
                                 <th scope="col">#</th>
@@ -43,13 +30,13 @@
                                     <td>{{$data->nama}}</td>
                                     <td>{{$data->email}}</td>
                                     <td>
-                                        <a href="" class="btn btn-warning btn-sm"><i class="fa fa-info"></i></a>
-                                        <a href="/dosen/edit/{{$data->id}}" class="btn btn-info btn-sm"><i class="fa fa-pen"></i></a>
+                                        <a href="" class="btn btn-warning btn-sm"><i class="fa-solid fa-circle-info"></i></a>
+                                        <a href="/dosen/edit/{{$data->id}}" class="btn btn-info btn-sm"><i class="fa-solid fa-pen-to-square"></i></a>
 
 
                                         <!-- Button trigger modal -->
                                         <button type="button" class="btn btn-danger btn-sm" data-bs-toggle="modal" data-bs-target="#exampleModal{{$data->id}}">
-                                        <i class="fa fa-trash"></i>
+                                        <i class="fa-solid fa-trash"></i>
                                         </button>
 
                                         <!-- Modal -->
@@ -86,6 +73,9 @@
 
                         </tbody>
                     </table>
+                </div>
+            </div>
+        </div>
     </div>
-
+</div>
 @endsection
