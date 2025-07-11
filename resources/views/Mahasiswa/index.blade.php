@@ -41,7 +41,7 @@
                                     <th scope="row">{{$nomor++}}</th>
                                     <td>{{$data->nim}}</td>
                                     <td>{{$data->nama}}</td>
-                                    <td>{{$data->dosens_id}}</td>
+                                    <td>{{$data->dosens->nama}}</td>
                                     <td>
                                         <a href="" class="btn btn-warning btn-sm"><i class="fa fa-info"></i></a>
                                         <a href="/dosen/edit/{{$data->id}}" class="btn btn-info btn-sm"><i class="fa fa-pen"></i></a>
