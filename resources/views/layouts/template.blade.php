@@ -225,7 +225,7 @@
             </ul>
           </li>
           <li class="nav-item">
-            <a href="/mahasiswa" class="nav-link">
+            <a href="/mhs" class="nav-link">
               <i class="nav-icon fa fa-users"></i>
               <p>
                 Mahasiswa
