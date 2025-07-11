@@ -11,4 +11,8 @@ class Mahasiswa extends Model
     public function dosens(){
         return $this->hasOne(Dosen::class, 'id', 'dosens_id');
     }
+
+    public function jurusans(){
+        return $this->hasOne(Jurusan::class, 'id', 'jurusans_id');
+    }
 }
