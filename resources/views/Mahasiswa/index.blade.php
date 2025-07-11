@@ -43,7 +43,50 @@
                                     <td>{{$data->nama}}</td>
                                     <td>{{$data->dosens->nama}}</td>
                                     <td>
-                                        <a href="" class="btn btn-warning btn-sm"><i class="fa fa-info"></i></a>
+                                        {{-- detail --}}
+                                        <!-- Button trigger modal -->
+                                        <button type="button" class="btn btn-warning btn-sm" data-toggle="modal" data-target="#exampleModal">
+                                        <i class="fa fa-info"></i>
+                                        </button>
+
+                                        <!-- Modal -->
+                                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                                                <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <img src="{{asset('/foto/'.$data->foto.'')}}" height="80" alt="">
+                                                <table class="table">
+
+                                                <tbody>
+                                                    <tr>
+                                                    <td>NIM</td>
+                                                    <td>: {{$data->nim}}</td>
+                                                    </tr>
+
+                                                    <tr>
+                                                    <td>Nama</td>
+                                                    <td>: {{$data->nama}}</td>
+                                                    </tr>
+
+                                                </tbody>
+                                                </table>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                                <button type="button" class="btn btn-primary">Save changes</button>
+                                            </div>
+                                            </div>
+                                        </div>
+                                        </div>
+                                        {{-- end of detail --}}
+
+
+
+
                                         <a href="/mhs/edit/{{$data->id}}" class="btn btn-info btn-sm"><i class="fa fa-pen"></i></a>
 
 
