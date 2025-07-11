@@ -24,11 +24,11 @@
                         </div>
                         <div class="mb-3">
                             <label for="exampleInputPassword1" class="form-label">Tanggal Lahir</label>
-                            <input type="text" name="tanggal" class="form-control" id="exampleInputPassword1">
+                            <input type="date" name="tanggal" class="form-control" id="exampleInputPassword1">
                         </div>
                         <div class="mb-3">
                             <label for="exampleInputPassword1" class="form-label">Dosen Pembimbing</label>
-                            <select name="rumpun" id="" class="form-control">
+                            <select name="dosen" id="" class="form-control">
                                 <option value="">-Pilih Dosen Pembimbing-</option>
                                 @foreach ($dosen as $item)
                                     <option value="{{$item->id}}">{{$item->nama}}</option>

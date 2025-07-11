@@ -32,7 +32,20 @@ class mahasiswaController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $mhs = new Mahasiswa;
+        $mhs->nim = $request->nim;
+        $mhs->nama = $request->nama;
+        $mhs->tempat_lahir = $request->tempat;
+        $mhs->tanggal_lahir = $request->tanggal;
+        $mhs->dosens_id = $request->dosen;
+        $mhs->jk = $request->jk;
+        $mhs->foto = $request->foto->getClientOriginalName();
+
+        $request->foto->move('foto',$request->foto->getClientOriginalName());
+
+        $mhs->save();
+
+        return redirect('/mhs');
     }
 
     /**
